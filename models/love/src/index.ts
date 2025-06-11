@@ -96,10 +96,7 @@ export class TRoom extends TDoc implements Room {
   @Index(IndexKind.FullText)
     description!: MarkupBlobRef | null
 
-  @Prop(TypeAny(love.component.RoomTypePresenter, love.string.Video), love.string.Video, {
-    editor: love.component.RoomTypePresenter
-  })
-    type!: RoomType
+  type!: RoomType
 
   access!: RoomAccess
 
